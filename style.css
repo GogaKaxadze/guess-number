@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Press Start 2P', sans-serif;
+}
+body{
+     color: #eee;
+     background-color: #222;
+}
+h1{
+     font-size: 4rem;
+    text-align: center;
+    margin-top: 25px;
+    width: 100%;
+}
+.above{
+     margin: 20px 10px;
+     display: flex;
+     justify-content: space-between;
+}
+#againButton{
+     border: none;
+    background-color: #eee;
+    color: #222;
+    font-size: 2rem;
+    font-family: inherit;
+    padding: 2rem 3rem;
+    cursor: pointer;
+}
+.container{
+     height: 43vh;
+     border-bottom: 7px solid #eee;
+}
+.under{
+     color: #eee;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+}
+#guessesNum{
+     background: #eee;
+     color: #333;
+     font-size: 6rem;
+     width: 15rem;
+     padding: 3rem 0rem;
+     text-align: center;
+     position: absolute;
+     bottom: 0;
+     left: 50%;
+     height: 180px;
+     border: none;
+     transform: translate(-70%, -230%);
+}
+#guessField{
+     background: none;
+     border: 4px solid #eee;
+     font-family: inherit;
+     color: inherit;
+     font-size: 5rem;
+     padding: 2.5rem;
+     margin:100px 0;
+     width: 15rem;
+     text-align: center;
+     display: block;
+     outline: none;
+}
+
+#submitButton{
+     border: none;
+     background-color: #eee;
+     color: #222;
+     font-size: 2rem;
+     font-family: inherit;
+     padding: 2rem 3rem;
+     cursor: pointer;
+     margin-top: -25px;
+}
+label{
+     font-size: 20px;
+}
+.right{
+     display: flex;
+     flex-direction: column;
+     gap: 30px;
+}
+.score{
+     margin-top: 30px;
+     font-size: 20px;
+}
+.highscore{
+     font-size: 20px;
+}
+@media (max-width:1026px){
+     h1{
+          font-size: 40px;
+     }
+}
+@media (max-width:642px){
+     h1{
+          font-size: 20px;
+     }
+     p{
+          font-size: 12px;
+     }
+     #againButton{
+          width: 25%;
+          font-size: 15px;
+          text-align: center;
+          padding: 0;
+          width: 130px;
+          height: 50px;
+     }
+     #guessesNum{
+          width: 150px;
+          height: 120px;
+          font-size: 35px;
+          transform: translate(-70px,-400px);
+     }
+     #guessField{
+          height: 50px;
+          width: 150px;
+     }
+     #submitButton{
+          font-size: 15px;
+          width: 160px;
+          height: 50px;
+          padding: 0;
+     }
+     .right{
+          margin-right: 25px;
+     }
+     .highscore{
+          font-size: 12px;
+     }
+     .score{
+          font-size: 12px;
+     }
+     label{
+          font-size: 12px;
+     }
+}
+
